@@ -1,0 +1,7 @@
+You are standing at the entrance. 
+
+You hear rustling from the right path.
+You feel a strong gust of wind from the middle path.
+You see something move in the left path.
+
+Pick a path!
