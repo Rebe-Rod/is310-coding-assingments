@@ -34,6 +34,7 @@ while True:
         if confirm == 'yes':
             steps.append((miles_walked, steps_walked, date))
             console.print(f"\Information added!: {date}, {miles_walked}, {steps_walked}")
+            table.add_row(date, miles_walked, steps_walked)
         else:
               console.print("[bold yellow] No worries, please re-enter the data![/bold yellow]")
 
@@ -41,6 +42,8 @@ while True:
         add_more = console.input("Would you like to add another day? (yes or no?)")
         if add_more != "yes":
             break
+
+console.print(table)
 
 # Save the data to a file
 file_path = os.path.join(os.getcwd(), "steps_per_day.json")
