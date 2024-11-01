@@ -9,7 +9,7 @@ os.environ['EUROPEANA_API_KEY'] = europeana_api_key
 
 def get_quotes(query):
     url = f"https://favqs.com/api/quotes/:quote_id"
-    # Get the data from the Europeana API
+
     response = requests.get("url")
     quote_data = response.json()
     quote_data = {
